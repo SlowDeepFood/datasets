@@ -161,7 +161,7 @@
                     area: {
 						
                         mode: "vertical",
-                        title: "Datasets",
+                        title: "Dataset Name",
                         labelAttrs: {
                             "font-size": 12
                         },
@@ -206,6 +206,15 @@
                                 },
                                 label: "UNIMIB2015"
                             },
+                            {
+                                //Pizza-Styles
+    								min: 2000,
+    								max: 2800,
+                                    attrs: {
+                                        fill: "#FF4500"
+                                    },
+                                    label: "Pizza-Styles"
+                                },
                             {
                             	//ECUSTFD
                                 min: 2001,
@@ -264,6 +273,16 @@
                                 },
                                 label: "Nutrition5k"
                             },
+                            {
+                                //GCC-30
+                                min:5000,
+                                max:6000,
+                              
+                                attrs: {
+                                    fill: "#008000"
+                                },
+                                label: "GCC-30"
+                            },
                              {
                             	//KenyanFood13
                                 min:5002,
@@ -287,7 +306,7 @@
                                 min:9061,
                                 max:20000,
                                 attrs: {
-                                    fill: "#FF4500"
+                                    fill: "#1B4F72"
                                 },
                                 label: "RecipeQA"
                             },
@@ -427,7 +446,7 @@
                     },
                     plot: {
                         mode: "vertical",
-                        title: "Size of Datasets",
+                        title: "# Images/# Classes",
                         labelAttrs: {
                             "font-size": 12
                         },
@@ -445,8 +464,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: ">1 and <=800",
-                                size: 15
+                                label: "646/41",
+                                size: 5
                             }, 
                             //UNIMIB2016
                             {
@@ -459,8 +478,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> 700 and <=1050",
-                                size: 16
+                                label: "1027/73",
+                                size: 6
                             },
 
                              //TFK
@@ -474,8 +493,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> 1052 and <=1644",
-                                size: 17
+                                label: "1644/34",
+                                size: 7
                             },
                            
                             //UNIMIB2015
@@ -489,8 +508,23 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> 1645 and <=2000",
-                                size: 18
+                                label: "2000/15",
+                                size: 8
+                            },
+                            
+                            //Pizza-Styles
+                            {
+                                min: 2000,
+                                max: 2800,
+                                attrs: {
+                                    fill: "#FF4500"
+                                },
+                                attrsHover: {
+                                    transform: "s1.5",
+                                    "stroke-width": 1
+                                },
+                                label: "2800/14",
+                                size: 9
                             },
                                 //ECUSTFD
                             {
@@ -503,8 +537,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> 2000 and <=2900",
-                                size: 19
+                                label: "2978/19",
+                                size: 10
                             }, 
                                  //Malaysian Food
                             {
@@ -517,8 +551,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> 3000 and <=3300",
-                                size: 20
+                                label: "3300/11",
+                                size: 11
                             }, 
                              
                              // //UNICT-FD889
@@ -533,8 +567,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> 3000 and <=3500",
-                                size: 21
+                                label: "3583/889",
+                                size: 12
                             } ,
                            // Sushi-50
                             {
@@ -547,8 +581,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> 3600 and <=3970",
-                                size: 22
+                                label: "3963/50",
+                                size: 13
                             },
                             // Chen
                             {
@@ -561,8 +595,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> 3971 and <=5000",
-                                size: 23
+                                label: "5000/250",
+                                size: 14
                             },
                             // Nutrition5k
                             {
@@ -575,8 +609,22 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> 5002 and <=5000",
-                                size: 24
+                                label: "5000/250",
+                                size: 15
+                            },
+                         // GCC-30
+                            {
+                                min:5000,
+                                max: 6000,
+                                attrs: {
+                                    fill: "#008000"
+                                },
+                                attrsHover: {
+                                    transform: "s1.5",
+                                    "stroke-width": 1
+                                },
+                                label: "6000/30",
+                                size: 16
                             },
                            
                                  // KenyanFood13
@@ -590,8 +638,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> 4000 and <=8174",
-                                size: 25
+                                label: "8174/13",
+                                size: 17
                             },
                             // UEC Food 100
 
@@ -605,8 +653,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> 8000 and <=9060",
-                                size: 25
+                                label: "9060/100",
+                                size: 18
                             },
 
                             // RecipeQA
@@ -615,14 +663,14 @@
                                  min:9061,
                                 max: 20000,
                                 attrs: {
-                                    fill: "#FF4500"
+                                    fill: "#1B4F72"
                                 },
                                 attrsHover: {
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> 20999 and <=20000",
-                                size: 26
+                                label: "20000/22",
+                                size: 19
                             },
 
 
@@ -637,8 +685,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> 20000 and <=31397",
-                                size: 27
+                                label: "31397/256",
+                                size: 20
                             },
 
                             //Yummly-66K
@@ -652,8 +700,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> 31398 and <=66615",
-                                size: 28
+                                label: "6661510",
+                                size: 21
                             },
                             //UPMC Food-101
 
@@ -667,8 +715,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> 66615 and <=90840",
-                                size: 29
+                                label: "90840/101",
+                                size: 22
                             },
 							  //ETHZ Food-101
                                     {
@@ -680,8 +728,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> 90840 and <=101000",
-                                size: 30
+                                label: "101000/101",
+                                size: 23
                             },
                             //Vireo Food-172
                             {
@@ -694,8 +742,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> Between 100  to 110 thousands",
-                                size: 31
+                                label: "110241/172",
+                                size: 24
                             },
                            
                              //FoodX-251
@@ -710,8 +758,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> Between 110 to 1.58K",
-                                size: 32
+                                label: "158846/251",
+                                size: 25
                             },
                            {
                             	//ChineseFoodNet
@@ -724,8 +772,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> Between 158  to 1.85K",
-                                size: 33
+                                label: "185628/208",
+                                size: 26
                             },
                               {
                             	//Food524DB
@@ -738,8 +786,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> Between 158  to 2.47K",
-                                size: 34
+                                label: "247636/524",
+                                size: 27
                             },
 
                             {
@@ -753,8 +801,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> Between 247  to 30.8K",
-                                size: 35
+                                label: "308000/70000",
+                                size: 28
                             },
 
                             {
@@ -768,8 +816,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> Between 30.8K  to 39.9K",
-                                size: 36
+                                label: "399726/500",
+                                size: 29
                            
                             },
                             {
@@ -783,8 +831,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> Between 39.9K  to 800K",
-                                size: 37
+                                label: "800000",
+                                size: 30
                            
                             },
 
@@ -799,8 +847,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> Between 800K  to 1.6 Million",
-                                size: 38
+                                label: "1642540/1100",
+                                size: 31
                             },
                             {
                             	//RecipeNLG
@@ -813,8 +861,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> Between 1.6 Million  to 2.2 Million",
-                                size: 39
+                                label: "2231142",
+                                size: 32
                             },
                              {
                             	//Recipe1M+
@@ -827,8 +875,8 @@
                                     transform: "s1.5",
                                     "stroke-width": 1
                                 },
-                                label: "> Between 2.2 Million  to 13 Million",
-                                size: 40
+                                label: "13000000",
+                                size: 33
                             }
                             
                             
@@ -871,6 +919,13 @@
                   "href": "http://www.ivl.disco.unimib.it/activities/food-recognition/",
                   tooltip: {content: "UNIMIB2015 Image#: 2000 Classes#: 15 Milano-Bicocca   Italy"}
               },
+              'Pizza-Styles': {
+                  latitude: 41.902782,
+                  longitude:12.496366,
+                  value: 2800,
+                  "href": "https://www.kaggle.com/naumanullah/slowdeepfood",
+                  tooltip: {content: "Pizza-Styles Image#: 2800 Classes#: 14    Italy"}
+              },
                  'ECUSTFD': {
                   latitude: 31.14363745,
                   longitude:121.4272456,
@@ -912,6 +967,13 @@
                   value: 5001,
                   "href": "https://github.com/amusi/CVPR2021-Papers-with-Code",
                   tooltip: {content: "Nutrition5k  Images#: 5000 Classes#: 250  -,	-"}
+              },
+              'GCC-30': {
+                  latitude:25.286106,
+                  longitude:51.534817,
+                  value: 6000,
+                  "href": "https://www.kaggle.com/naumanullah/slowdeepfood",
+                  tooltip: {content: "GCC-30  Images#: 6000 Classes#: 30  Doha,	Qatar"}
               },
                  'KenyanFood13': {
                   latitude: 0.351835778,
@@ -2570,31 +2632,31 @@
         </div>
         <div class="row no-gutter">
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/MM-1.png')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/MM-2.png')">
         
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/MM-3.JPG')">
                
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/MM-4.JPG')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/MM-5.JPG')">
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/MM-6.JPG')">
                    
                 </div>
             </div>
@@ -2618,32 +2680,32 @@
         </div>
         <div class="row no-gutter">
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UN16-1.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UN16-2.jpg')">
         
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UN16-3.jpg')">
                
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UN16-4.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UN16-5.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UN16-6.jpg')">
                    
                 </div>
             </div>
@@ -2667,32 +2729,32 @@
         </div>
         <div class="row no-gutter">
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/A-1.JPG')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/A-2.JPG')">
         
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/A-3.JPG')">
                
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/A-4.JPG')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/A-5.JPG')">
                    
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/A-6.JPG')">
                    
                 </div>
             </div>
@@ -2716,32 +2778,32 @@
         </div>
         <div class="row no-gutter">
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UN15-1.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UN15-2.jpg')">
         
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UN15-3.jpg')">
                
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UN15-4.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UN15-5.jpg')">
                    
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UN15-6.jpg')">
                     
                 </div>
             </div>
@@ -2757,6 +2819,54 @@
         </div>
         <!-- ////////////////////////////// End here /////////////////////////////////////////////////////////////////////-->
      
+     <!--//////////////////////////////////// Start here  ////////////////////////////////////////////////////////////-->
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">                
+                <h3 class="margin-top">Pizza-Styles</h3>
+                <hr class="light">
+                </div>
+        </div>
+        <div class="row no-gutter">
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                <div class="image-box" style="background-image:url('./img/about_img/Pizza-1.jpg')">
+                    
+                </div>
+            </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                <div class="image-box" style="background-image:url('./img/about_img/Pizza-2.jpg')">
+        
+                </div>
+            </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                <div class="image-box" style="background-image:url('./img/about_img/Pizza-3.jpg')">
+               
+                </div>
+            </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                <div class="image-box" style="background-image:url('./img/about_img/Pizza-4.jpg')">
+                    
+                </div>
+            </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                <div class="image-box" style="background-image:url('./img/about_img/Pizza-5.jpg')">
+                   
+                </div>
+            </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                <div class="image-box" style="background-image:url('./img/about_img/Pizza-6.jpg')">
+                    
+                </div>
+            </div>
+                    </div>
+        <div class="row">
+            <p class="margin-top text-center">
+                
+                <a href="https://www.kaggle.com/naumanullah/slowdeepfood" class="btn btn-default btn-xl fa-padding-r">
+                    <i class="fa fa-download fa-lg fa-padding-r"></i> Download
+                </a>
+                
+            </p>
+        </div>
       
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">                
@@ -2766,27 +2876,27 @@
         </div>
         <div class="row no-gutter">
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/ES-1.JPG')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/ES-2.JPG')">
         
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/ES-3.JPG')">
                
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/ES-4.JPG')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/ES-5.JPG')">
                     <!-- <div class="image-box-caption">
                         <div class="image-box-caption-content">
                             <div class="image-category text-faded">
@@ -2805,7 +2915,7 @@
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/ES-6.JPG')">
                     <!-- <div class="image-box-caption">
                         <div class="image-box-caption-content">
                             <div class="image-category text-faded">
@@ -2843,32 +2953,32 @@
         </div>
         <div class="row no-gutter">
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/MF-1.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/MF-2.jpg')">
         
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/MF-3.jpg')">
                
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/MF-4.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/MF-5.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/MF-6.jpg')">
                    
                 </div>
             </div>
@@ -2891,32 +3001,32 @@
         </div>
         <div class="row no-gutter">
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/sushi-1.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/sushi-2.jpg')">
         
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/sushi-3.jpg')">
                
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/sushi-4.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/sushi-5.jpg')">
                    
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/sushi-6.jpg')">
                    
                 </div>
             </div>
@@ -2941,32 +3051,32 @@
         </div>
         <div class="row no-gutter">
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/chen-1.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/chen-2.jpg')">
         
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/chen-3.jpg')">
                
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/chen-4.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/chen-5.jpg')">
                    
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/chen-6.jpg')">
                    
                 </div>
             </div>
@@ -2990,32 +3100,32 @@
         </div>
         <div class="row no-gutter">
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/NK-1.JPG')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/NK-2.JPG')">
         
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/NK-3.JPG')">
                
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/NK-4.JPG')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/NK-5.JPG')">
                    
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/NK-6.JPG')">
                    
                 </div>
             </div>
@@ -3030,6 +3140,58 @@
             </p>
         </div>
         <!-- ////////////////////////////// End here /////////////////////////////////////////////////////////////////////-->
+        
+        <!--//////////////////////////////////// Start here  ////////////////////////////////////////////////////////////-->
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">                
+                <h3 class="margin-top">GCC-30</h3>
+                <hr class="light">
+                </div>
+        </div>
+        <div class="row no-gutter">
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                <div class="image-box" style="background-image:url('./img/about_img/GCC-1.jpg')">
+                    
+                </div>
+            </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                <div class="image-box" style="background-image:url('./img/about_img/GCC-2.jpg')">
+        
+                </div>
+            </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                <div class="image-box" style="background-image:url('./img/about_img/GCC-3.jpg')">
+               
+                </div>
+            </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                <div class="image-box" style="background-image:url('./img/about_img/GCC-4.jpg')">
+                    
+                </div>
+            </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                <div class="image-box" style="background-image:url('./img/about_img/GCC-5.jpg')">
+                   
+                </div>
+            </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                <div class="image-box" style="background-image:url('./img/about_img/GCC-6.jpg')">
+                   
+                </div>
+            </div>
+                    </div>
+        <div class="row">
+            <p class="margin-top text-center">
+                
+                <a href="https://www.kaggle.com/naumanullah/slowdeepfood" class="btn btn-default btn-xl fa-padding-r">
+                    <i class="fa fa-download fa-lg fa-padding-r"></i> Download
+                </a>
+                
+            </p>
+        </div>
+        <!-- ////////////////////////////// End here /////////////////////////////////////////////////////////////////////-->
+        
+        
          <!--//////////////////////////////////// Start here  ////////////////////////////////////////////////////////////-->
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">                
@@ -3039,32 +3201,32 @@
         </div>
         <div class="row no-gutter">
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/KenyanFood-1.png')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/KenyanFood-2.png')">
         
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/KenyanFood-3.png')">
                
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/KenyanFood-4.png')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/KenyanFood-5.png')">
                    
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/KenyanFood-6.png')">
                    
                 </div>
             </div>
@@ -3089,27 +3251,27 @@
         </div>
         <div class="row no-gutter">
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UEC-1.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UEC-2.jpg')">
         
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UEC-3.jpg')">
                
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UEC-4.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UEC-5.jpg')">
                     
                 </div>
             </div>
@@ -3132,87 +3294,38 @@
         <!--//////////////////////////////////// Start here  ////////////////////////////////////////////////////////////-->
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">                
-                <h3 class="margin-top">Recipe QA</h3>
-                <hr class="light">
-                </div>
-        </div>
-        <div class="row no-gutter">
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
-                    
-                </div>
-            </div>
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
-        
-                </div>
-            </div>
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
-               
-                </div>
-            </div>
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
-                    
-                </div>
-            </div>
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
-                    
-                </div>
-            </div>
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
-                    
-                </div>
-            </div>
-                    </div>
-        <div class="row">
-            <p class="margin-top text-center">
-                
-                <a href="https://hucvl.github.io/recipeqa/" class="btn btn-default btn-xl fa-padding-r">
-                    <i class="fa fa-download fa-lg fa-padding-r"></i> Download
-                </a>
-                
-            </p>
-        </div>
-        <!-- ////////////////////////////// End here /////////////////////////////////////////////////////////////////////-->   
-        <!--//////////////////////////////////// Start here  ////////////////////////////////////////////////////////////-->
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">                
                 <h3 class="margin-top">UEC Food265</h3>
                 <hr class="light">
                 </div>
         </div>
         <div class="row no-gutter">
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UEC256-1.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UEC256-2.jpg')">
         
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UEC256-3.jpg')">
                
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UEC256-4.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UEC256-5.jpg')">
                    
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UEC256-6.jpg')">
                    
                 </div>
             </div>
@@ -3236,32 +3349,32 @@
         </div>
         <div class="row no-gutter">
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/yummly-1.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/yummly-2.jpg')">
         
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/yummly-3.jpg')">
                
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/yummly-4.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/yummly-5.jpg')">
                   
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/yummly-6.jpg')">
                    
                 </div>
             </div>
@@ -3285,27 +3398,27 @@
         </div>
         <div class="row no-gutter">
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UMPC-1.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UMPC-2.jpg')">
         
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UMPC-3.jpg')">
                
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UMPC-4.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UMPC-5.jpg')">
                     <!-- <div class="image-box-caption">
                         <div class="image-box-caption-content">
                             <div class="image-category text-faded">
@@ -3324,7 +3437,7 @@
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/UMPC-6.jpg')">
                     <!-- <div class="image-box-caption">
                         <div class="image-box-caption-content">
                             <div class="image-category text-faded">
@@ -3363,27 +3476,27 @@
         </div>
         <div class="row no-gutter">
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/Food101-1.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/Food101-2.jpg')">
         
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/Food101-3.jpg')">
                
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/Food101-4.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/Food101-5.jpg')">
                     <!-- <div class="image-box-caption">
                         <div class="image-box-caption-content">
                             <div class="image-category text-faded">
@@ -3402,7 +3515,7 @@
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/Food101-6.jpg')">
                     <!-- <div class="image-box-caption">
                         <div class="image-box-caption-content">
                             <div class="image-category text-faded">
@@ -3441,32 +3554,32 @@
         </div>
         <div class="row no-gutter">
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/VR-1.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/VR-2.jpg')">
         
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/VR-3.jpg')">
                
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/VR-4.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/VR-5.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/VR-6.jpg')">
                    
                 </div>
             </div>
@@ -3490,27 +3603,27 @@
         </div>
         <div class="row no-gutter">
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/FX-1.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/FX-2.jpg')">
         
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/FX-3.jpg')">
                
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/FX-4.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/FX-5.jpg')">
                     <!-- <div class="image-box-caption">
                         <div class="image-box-caption-content">
                             <div class="image-category text-faded">
@@ -3529,7 +3642,7 @@
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/FX-6.jpg')">
                     <!-- <div class="image-box-caption">
                         <div class="image-box-caption-content">
                             <div class="image-category text-faded">
@@ -3572,32 +3685,32 @@
         </div>
         <div class="row no-gutter">
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/China-1.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/China-2.jpg')">
         
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/China-3.jpg')">
                
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/China-4.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/China-5.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/China-6.jpg')">
                     
                 </div>
             </div>
@@ -3671,32 +3784,32 @@
         </div>
         <div class="row no-gutter">
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/pic-1.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/pic-2.jpg')">
         
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/pic-3.jpg')">
                
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/pic-4.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/pic-5.jpg')">
                    
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/pic-6.jpg')">
                    
                 </div>
             </div>
@@ -3720,32 +3833,32 @@
         </div>
         <div class="row no-gutter">
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/ISIA-1.JPG')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/ISIA-2.JPG')">
         
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/ISIA-3.JPG')">
                
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/ISIA-4.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/ISIA-5.JPG')">
                    
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/ISIA-6.JPG')">
                    
                 </div>
             </div>
@@ -3769,32 +3882,32 @@
         </div>
         <div class="row no-gutter">
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/im2recipe-1.png')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/im2recipe-2.png')">
         
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/im2recipe-3.png')">
                
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/im2recipe-4.png')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/recipe2im-5.png')">
                    
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/recipe2im-6.png')">
                    
                 </div>
             </div>
@@ -3819,32 +3932,32 @@
         </div>
         <div class="row no-gutter">
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/cp-1.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/cp-2.jpg')">
         
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/cp-3.jpg')">
                
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/cp-4.jpg')">
                     
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/cp-5.jpg')">
                    
                 </div>
             </div>
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
+                <div class="image-box" style="background-image:url('./img/about_img/cp-6.jpg')">
                   
                 </div>
             </div>
@@ -3853,110 +3966,6 @@
             <p class="margin-top text-center">
                 
                 <a href="https://www.nii.ac.jp/dsc/idr/cookpad/cookpad.html" class="btn btn-default btn-xl fa-padding-r">
-                    <i class="fa fa-download fa-lg fa-padding-r"></i> Download
-                </a>
-                
-            </p>
-        </div>
-        <!-- ////////////////////////////// End here /////////////////////////////////////////////////////////////////////-->
-       
-      
-       
-         
-        
-        <!--//////////////////////////////////// Start here  ////////////////////////////////////////////////////////////-->
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">                
-                <h3 class="margin-top">RecipeNLG</h3>
-                <hr class="light">
-                </div>
-        </div>
-        <div class="row no-gutter">
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
-                    
-                </div>
-            </div>
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
-        
-                </div>
-            </div>
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
-               
-                </div>
-            </div>
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
-                    
-                </div>
-            </div>
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
-                  
-                </div>
-            </div>
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
-                    
-                </div>
-            </div>
-                    </div>
-        <div class="row">
-            <p class="margin-top text-center">
-                
-                <a href="https://github.com/Glorf/recipenlg" class="btn btn-default btn-xl fa-padding-r">
-                    <i class="fa fa-download fa-lg fa-padding-r"></i> Download
-                </a>
-                
-            </p>
-        </div>
-        <!-- ////////////////////////////// End here /////////////////////////////////////////////////////////////////////-->
-        
-        <!--//////////////////////////////////// Start here  ////////////////////////////////////////////////////////////-->
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">                
-                <h3 class="margin-top">Recipe1M+</h3>
-                <hr class="light">
-                </div>
-        </div>
-        <div class="row no-gutter">
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/1.jpg')">
-                    
-                </div>
-            </div>
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/2.jpg')">
-        
-                </div>
-            </div>
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/3.jpg')">
-               
-                </div>
-            </div>
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/4.jpg')">
-                    
-                </div>
-            </div>
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/5.jpg')">
-                  
-                </div>
-            </div>
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                <div class="image-box" style="background-image:url('./img/about_img/6.jpg')">
-                    
-                </div>
-            </div>
-                    </div>
-        <div class="row">
-            <p class="margin-top text-center">
-                
-                <a href="http://im2recipe.csail.mit.edu/" class="btn btn-default btn-xl fa-padding-r">
                     <i class="fa fa-download fa-lg fa-padding-r"></i> Download
                 </a>
                 
